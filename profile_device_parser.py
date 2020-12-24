@@ -268,7 +268,7 @@ else :
 
 #-------------------------- select slave device section  --------------------------
 print()
-print("which device want to parse to ?")
+print("which device format you want to parse to ?")
 device_default = device_l
 device_parse_to = input('%s (%s) : '%(SEP.join(device_l),device_default[0])).strip().capitalize() or device_default[0]
 device_parse_to_channel = [ *gain_d[device_parse_to]["ch"] ]
